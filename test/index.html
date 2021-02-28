@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jm compare with joi</title>
+  </head>
+  <body>
+    <h1>Testing 7000 properties</h1>
+    <h2 id="json-msg"></h2>
+    <pre></pre>
+    <h2 id="joi"></h2>
+    <pre id="pre2"></pre>
+    <script src="../dist/npm-browser.min.js"></script>
+    <script>
+    	npm("ripple-effects calerts json-msg",(ripple,calert,jm)=>{
+    		calert(`${JSON.stringify(jm.str(),null,2)}`,{
+    			contentPosition: "left",
+
+    		})
+    		ripple("body",{background: "yellow"})
+    	})
+    </script>
+  </body>
+</html>
